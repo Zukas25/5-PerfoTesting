@@ -17,7 +17,7 @@ config:
     conditions:
       - expression: vuers.failed == 0
       - expression: "http.request_rate >= 2"
-      - expression: "http.response_time.max < 600"
+      - expression: "http.response_time.max < 500"
 scenarios:
   - name: Getting a resource
     flow:
