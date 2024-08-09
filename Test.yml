@@ -27,7 +27,7 @@ scenarios:
           url: "{{ target}}post"
           json:
             ursename: "{{ userkey1 }}"
-            password: "{{userkey2 }}"
+            password: "{{ userkey2 }}"
           capture: 
             - json: "$.json"
               as: "request_body"
